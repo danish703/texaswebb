@@ -19,6 +19,8 @@ public class Calculate extends HttpServlet{
 		res.addCookie(areaCookie);
 		res.addCookie(circumFerenceCoookie);
 		PrintWriter out = res.getWriter();
+		out.println("<html><head><title>Area of circle</title></head><body bgcolor='green'>");
 		out.println("Area = "+area+" and Circumference = "+circumference);
+		out.println("</body></html>");
 	}
 }
